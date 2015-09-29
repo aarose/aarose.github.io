@@ -7,15 +7,22 @@ body {
   margin-bottom: 40px;
   color: #657b83;
   text-align: center;
+  font-size: 1.5em;
 }
-
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+.avatar > h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
 .avatar > img {
   -webkit-border-radius: 99px;
   -moz-border-radius: 99px;
   border-radius: 99px;
   margin-top: 2em;
 }
-
 .nav>li>a {
   text-transform: uppercase;
   padding: 1em;
@@ -26,34 +33,39 @@ body {
 .nav>.active {
   border: 1px solid;
 }
-
 ul.links {
   list-style-type: none;
   padding: 1em 0;
 }
-
 ul.links>li {
   display: inline;
   padding: 0.2em;
   font-size: 2em;
 }
-
 .page-title {
   margin-bottom: 1em;
   border-bottom: 1px solid #eee8d5;
   text-align: left;
 }
-
-.post ul {
-  list-style-type: none;
-  text-transform: uppercase;
-  font-size:0.75em;
+.post {
+  text-align: left;
 }
-
+.post > h2 {
+  margin-left: 1em;
+}
+.post > h2 > a:hover {
+  text-decoration: none;
+}
+.post > p, .btn-group {
+  margin-left: 4em;
+}
+.btn-group a {
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
 .credits {
   list-style-type: none;
 }
-
 .footer {
   position: absolute;
   bottom: 0;
@@ -61,7 +73,6 @@ ul.links>li {
   height: 40px;
   background-color: #eee8d5;
 }
-
 .footer > .container > p {
   margin-top: 10px;
 }

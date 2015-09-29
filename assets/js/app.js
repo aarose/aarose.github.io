@@ -3,13 +3,9 @@ var mainApp = angular.module('mainApp', ['ui.router'])
         $urlRouterProvider.otherwise('/');
 
         $stateProvider
-            .state('portfolio', {
+            .state('code', {
                 url: '/',
-                templateUrl: 'pages/portfolio.html',
-            })
-            .state('contact', {
-                url: '/contact',
-                templateUrl: 'pages/contact.html',
+                templateUrl: 'pages/code.html',
             })
             .state('about', {
                 url: '/about',
@@ -22,5 +18,13 @@ var mainApp = angular.module('mainApp', ['ui.router'])
             .state('credits', {
                 url: '/credits',
                 templateUrl: 'pages/credits.html',
+            })
+            .state('talks', {
+                url: '/talks',
+                templateUrl: 'pages/talks.html',
+            })
+            .state('design', {
+                url: '/design',
+                templateUrl: 'pages/design.html',
             })
     }])
