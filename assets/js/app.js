@@ -1,5 +1,5 @@
 var mainApp = angular.module('mainApp', ['ui.router'])
-    .config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
+    .config(['$urlRouterProvider', '$stateProvider', '$locationProvider', function($urlRouterProvider, $stateProvider, $locationProvider) {
         $urlRouterProvider.otherwise('/');
 
         $stateProvider
@@ -27,4 +27,7 @@ var mainApp = angular.module('mainApp', ['ui.router'])
                 url: '/design',
                 templateUrl: 'pages/design.html',
             })
+
+        // use the HTML5 History API
+        $locationProvider.html5Mode(true);
     }])
